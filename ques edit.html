@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Ques 1 </title>
+        <link href="style3edit.css" rel="stylesheet" type="text/css">
+    </head>
+    <script>
+
+        function myfunc()
+        {
+          var a=document.myform.Solution.value;
+        
+          if(a=="e")
+          {
+             alert(" You got it right " );
+             window.location.replace(" pass1.html ");            
+          }
+
+          else
+          {
+            alert("You have entered an incorrect answer. Please try again." );
+          }
+         
+         
+        }
+        
+        </script>
+    <body background= "https://media.giphy.com/media/BjILuRhWMnBaU/giphy.gif">
+        <header>
+            <div class="row">
+                    <div class = "logo">
+                                <img src="logogame1.png">
+                     </div>
+                        <ul class="main-nav">
+                            <li class="active"><a href=" "> QUES 1 </a></li>
+                            <li><a href="game.html"> HOME </a></li>
+                            <li><a href="game1.html" > INSTRUCTIONS </a></li>
+                            <li><a href="end.html" > END </a></li>
+                        </ul>
+            </div>
+
+                
+                
+                   <br><br> <h1> <u> Question 1 </u></h1>
+                
+
+                <img src="cc2.jpg">
+
+            <p> **Enter Question** <br><br>
+                **if the answer entered by the participants is <br>
+                correct the next window will pop-up <br>
+                 for now click this button to proceed.**<br>
+            
+            <form name= "myform" action=" " method="post">
+            <div>
+
+               <label for="Solution"> Solution </label>
+               <input type="text" name="Solution"> 
+            </div>
+            <div>       
+               <input type="button" class="submit" value="Submit" onclick="myfunc ()">
+               
+               </div>
+
+            </form>
+            
+           </p>
+
+           <div class="button">
+                <a href="pass1.html" class="btn btn1"> proceed </a>
+            </div>
+
+    </header>    
+        
+    </body>
+</html>

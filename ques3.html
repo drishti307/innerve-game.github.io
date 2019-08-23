@@ -4,6 +4,27 @@
         <title> Ques3 </title>
         <link href="style2.css" rel="stylesheet" type="text/css">
     </head>
+    <script>
+
+        function myfunc()
+        {
+          var a=document.myform.Solution.value;
+        
+          if(a=="e")
+          {
+             alert(" You got it right " );
+             window.location.replace(" pass3.html ");
+            
+          }
+          else
+          {
+            alert("You have entered an incorrect answer. Please try again." );
+          }
+         
+         
+        }
+        
+        </script>
     <body>
         <header>
             <div class="row">
@@ -18,8 +39,6 @@
                         </ul>
             </div>
 
-        <div class="para">
-
                 <div class="headline">
                     <h1> <u> Question 3 </u></h1>
                 </div>
@@ -31,22 +50,20 @@
                 correct the next window will pop-up <br>
                  for now click this button to proceed.**<br>
             
-            <form action=" " method="post">
-            <div>
-
-               <label for="Solution"> Solution </label> 
-               <input type="text" name="Solution"> 
-            </div>   
-               <div>
-                   <input type="Submit" class="submit" value="Submit">
-               
-               </div>
-
-            </form>
+                 <form name= "myform" action=" " method="post">
+                    <div>
+        
+                       <label for="Solution"> Solution </label> <br>
+                       <input type="text" name="Solution"> 
+                    </div>
+                    <div>      
+                       <input type="button" class="submit" value="Submit" onclick="myfunc ()">
+                       
+                       </div>
+        
+                    </form>
             
            </p>
-
-        </div>   
 
            <div class="button">
                 <a href="pass3.html" class="btn btn1"> proceed </a>

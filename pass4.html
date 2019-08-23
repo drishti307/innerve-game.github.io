@@ -1,9 +1,11 @@
+<!DOCTYPE html>
 <html>
     <head>
         <title> Ques 3</title>
         <link href="style3.css" rel="stylesheet" type="text/css">
     </head>
-    <body>
+    
+    <body background="avengers1.jpg">
         <header>
             <div class="row">
                     <div class = "logo">
@@ -16,32 +18,29 @@
                             <li><a href="end.html" > END </a></li>
                         </ul>
             </div>
-
-        <div class="para">
-
-            <img src="cc2.jpg">
-
-        
+            <div class="picture">
+                <img src="cc2.jpg">
+            </div>   
 
              <h2>Congratulations! </h2> <br>
                 <p>
                     You have discovered the first location!<br>
-                /*Enter Location*/
+                
             </p>
-        </div>
 
-            <form action=" " method="post">
-               <label for="Solution"> Enter the Password obtained at the location<br>
-                 to proceed to the next level
-               </label> <br>
+        <form name= "myform" action=" " method="post">
+            <div>
+
+               <label for="Solution"> Solution </label>
                <input type="text" name="Solution"> 
-               
-               <div>
-                   <input type="Submit" class="submit" value="Submit">
+            </div>
+            <div>       
+               <input type="button" class="submit" value="Submit" onclick="myfunc ()">
                
                </div>
-               
+
             </form>
+            <br><br>
             <div class="button">
                 <a href="Ques5.html" class="btn btn1"> proceed </a>
             </div>       
@@ -50,4 +49,25 @@
         </header>
         
     </body>
+    <script>
+
+            function myfunc()
+            {
+              var a=document.myform.Solution.value;
+            
+              if(a=="e")
+              {
+                 alert(" You got it right " );
+                 window.location.replace(" Ques5.html ");
+                
+              }
+              else
+              {
+                alert("You have entered an incorrect answer. Please try again." );
+              }
+             
+             
+            }
+            
+            </script>
 </html>

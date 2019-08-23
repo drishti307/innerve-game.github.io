@@ -4,16 +4,13 @@
 }
 
 header{
-    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("rules 1.jpg");
-    background-color: #cccccc;
-    background-position: center;
-    height: 100vh;
-    background-size: cover;
+   
+    
 }
 .main-nav{
     float: right;
     list-style: none;
-    margin-top: 30px;
+    margin-top: 35px;
     margin-right: 30px;
 }
 .main-nav li{
@@ -49,19 +46,17 @@ header{
 
 body{
     font-family: monospace;
+    background-position: center;
+    height: 100vh;
+    background-size: cover;
 }
+
 .row{
     max-width: 1200px;
     margin: auto;
 }
 
-.para{
-    
-    position: absolute;
-    width: 1200px;
-    margin-left: 0px;
-    margin-top: 0px;
-}
+
 h1
 {
  color: beige;
@@ -69,7 +64,7 @@ h1
  font-size: 50px;
  font-family: cursive;
  text-transform: capitalize;
- margin-top: 130px; 
+ margin-top: 100px; 
  margin-left: 110px;  
 }
 
@@ -89,7 +84,8 @@ margin-top: 30px;
   margin-top: 30px;
   margin-left: 600px;
   position: relative;
-  top: 70%; 
+  top: 30%; 
+
 }
 
 .btn{
@@ -99,7 +95,6 @@ margin-top: 30px;
     text-decoration: none;
     margin-right: 5px;
     font-size: 15px;
-    
 
 }
 

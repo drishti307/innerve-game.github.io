@@ -2,14 +2,7 @@
     margin:0;
     padding:0;
 }
-
-header{
-    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("avengers1.jpg");
-    background-color: #cccccc;
-    background-position: center;
-    height: 100vh;
-    background-size: cover;
-}
+    
 .main-nav{
     float: right;
     list-style: none;
@@ -45,10 +38,14 @@ header{
     width: 100px;
     height : auto;
     float: left;
-    margin-top: 20px;
 }
 
 body{
+    margin-top: 10px;
+    background-repeat:no-repeat;
+    background-position: center;
+    height: 100vh;
+    background-size: cover;
     font-family: monospace;
 }
 .row{
@@ -56,23 +53,15 @@ body{
     margin: auto;
 }
 
-.para{
-    position: absolute;
-    width: 1200px;
-    margin-left: 0px;
-    margin-top: 0px;
-}
-
-
 img{
     float: right;
-    margin-top: 150px;
+    margin-top: 0px;
     max-width: 400px;
 }
 
 h2
 {
-margin-top: 150px;
+margin-top: 10px;
 margin-bottom: 5px;
 color: white;
 text-align: center;
@@ -101,11 +90,11 @@ form{
     line-height: 35px;
     font-family: monospace;
     display: block;
-    float: left;
-    margin-right: 160px;
+    float: center;
+    margin-right: 30px;
     color: white;
     font-size: 20px;
-    margin-top: 310px;
+    margin-top: 30px;
 }
 
 .submit
@@ -128,6 +117,7 @@ form{
     color: white;
     text-decoration: none;
     margin-right: 5px;
+    margin-top: 20px;
     font-size: 15px;
     text-transform: uppercase;
     
