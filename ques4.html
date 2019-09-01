@@ -4,7 +4,17 @@
         <title> Ques4 </title>
         <link href="style2.css" rel="stylesheet" type="text/css">
     </head>
-    <script>
+   
+
+
+<script type="text/javascript">
+
+window.history.forward();
+
+function noBack() { window.history.forward(); }
+
+
+
 
         function myfunc()
         {
@@ -25,7 +35,11 @@
         }
         
         </script>
-    <body background="codinggif.gif">
+    <body 
+           onload="noBack();"
+
+onpageshow="if(event.persisted) noBack():" onunload="" ;
+background="codinggif.gif">
         <header>
             <div class="row">
                     <div class = "logo">
