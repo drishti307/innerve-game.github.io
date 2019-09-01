@@ -5,7 +5,17 @@
         <meta charset="utf-8">
         <link href="style3edit.css" rel="stylesheet" type="text/css">
     </head>
-    <script>
+    
+
+
+<script type="text/javascript">
+
+window.history.forward();
+
+function noBack() { window.history.forward(); }
+
+window.onbeforeload = function() {return" Your work will be lost." ;};
+
 
         function myfunc()
         {
@@ -26,7 +36,11 @@
         }
         
         </script>
-    <body background= "https://media.giphy.com/media/BjILuRhWMnBaU/giphy.gif">
+    <body 
+           onload="noBack();"
+
+onpageshow="if(event.persisted) noBack():" onunload="" ;
+background= "https://media.giphy.com/media/BjILuRhWMnBaU/giphy.gif">
         <header>
 
             <div class="row">
