@@ -4,7 +4,17 @@
         <title> Ques3 </title>
         <link href="style2.css" rel="stylesheet" type="text/css">
     </head>
-    <script>
+   
+
+
+<script type="text/javascript">
+
+window.history.forward();
+
+function noBack() { window.history.forward(); }
+
+window.onbeforeload = function() {return" Your work will be lost." ;};
+
 
         function myfunc()
         {
@@ -25,7 +35,10 @@
         }
         
         </script>
-    <body background="https://media.giphy.com/media/sRFEa8lbeC7zbcIZZR/giphy.gif">
+    <body  onload="noBack();"
+
+onpageshow="if(event.persisted) noBack():" onunload="" ;
+background="https://media.giphy.com/media/sRFEa8lbeC7zbcIZZR/giphy.gif">
         <header>
             <div class="row">
                     <div class = "logo">
