@@ -5,7 +5,10 @@
         <link href="style2.css" rel="stylesheet" type="text/css">
     </head>
     
-    <body background= "coding5.gif">
+    <body  onload="noBack();"
+
+onpageshow="if(event.persisted) noBack():" onunload="" ;
+background= "coding5.gif">
         <header>
             <div class="row">
                     <div class = "logo">
@@ -50,7 +53,17 @@
     </header>    
         
     </body>
-    <script>
+    
+
+
+<script type="text/javascript">
+
+window.history.forward();
+
+function noBack() { window.history.forward(); }
+
+window.onbeforeload = function() {return" Your work will be lost." ;};
+
 
         function myfunc()
         {
