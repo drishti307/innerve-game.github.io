@@ -1,0 +1,178 @@
+{
+    margin:10;
+    padding:10;
+}
+
+.main-nav{
+    float: right;
+    list-style: none;
+    margin-top: 30px;
+    margin-right: 32px;
+}
+.main-nav li{
+    display: inline-block;
+    
+}
+
+.main-nav li a
+{
+    color: white;
+    text-decoration :none;
+    padding: 5px 22px;
+    font-family: "roboto", sans-serif;
+    font-size: 17px;
+}
+
+.main-nav li.active a
+{
+    border: 1px solid white;
+
+}
+
+.main-nav li a:hover
+{
+    background-color: orange;
+    border: 1px solid white;
+}
+
+.logo img{
+    width: 220px;
+    height : auto;
+    float: left;
+    margin-top: -40px;
+    margin-left: -20px;
+}
+
+body{
+    
+	background-size:cover;
+	font-family: sans-serif; 
+}
+.loginBox
+{
+	position:absolute;
+	top:55%;
+	left:50%;
+	transform: translate(-50%, -50%);
+	width:350px;
+	height:420px;
+	padding:80px 40px;
+	box-sizing: border-box;
+	background:rgba(0,0,0,0.5) ;
+	
+}
+
+
+
+h2
+{
+    margin:0;
+    font-size: 30px;
+	padding:0 0 20px;
+	color:white;
+	text-align:center;
+} 
+
+
+
+.loginBox p
+{
+	padding:0;
+	margin:0;
+	font-weight:bold;
+	color:#fff;
+	
+} 
+
+
+.loginBox input
+{
+	width:100%;
+	margin-bottom: 20px; 
+}
+
+.loginBox input[type="text"], .loginBox input[type="password"]
+{
+	border: none;
+	border-bottom: 1px solid #fff;
+	background: transparent;
+	outline:none;
+	height:40px;
+	color:#fff;
+	font-size: 16px;
+	
+	
+}
+
+
+.submit
+{
+	outline:none;
+	height: 40px;
+	color:#fff;
+	font-size:16px;
+	background: transparent;
+	cursor:pointer;
+    box-sizing: border-box;
+    border: none;
+	padding: 10px 28px;
+	margin-top: 10px;
+    text-decoration: none;
+
+}
+
+
+.submit:hover
+{
+	background: blue;
+}
+ 
+ 
+ 
+
+.loginBox a
+{
+	color: #fff;
+	font-size:14px;
+	font-weight:bold;
+} 
+
+
+::placeholder
+{
+	color:rgba(255,255,255,0.5); 
+}
+
+
+.user
+{
+	width:100px;
+	height:100px; 
+	overflow:hidden;
+	position:absolute;
+	top:calc(-100px/2);
+	left:calc(50% - 50px);
+	border-radius:50%;
+}
+
+.button
+{
+  margin-top: 30px;
+  margin-left: 600px;  
+}
+
+.btn{
+    border: 1px solid white;
+    padding: 10px 30px;
+    color: white;
+    text-decoration: none;
+    margin-right: 5px;
+    font-size: 15px;
+    text-transform: uppercase;
+    
+}
+
+.btn1:hover
+{
+    background-color: orange;
+}

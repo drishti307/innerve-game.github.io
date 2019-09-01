@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> code quest 2</title>
+        <link href="login test.css" rel="stylesheet" type="text/css">
+  
+    </head>
+    <body background="avengerslogin.jpg">
+            <header>
+                <div class="row">
+                    <div class = "logo">
+                        <img src="logogame final.png">
+                    </div>
+                    <ul class="main-nav">
+                      <li class="active"><a href=""> LOG-IN </a></li>
+                      <li><a href="end.html" > END </a></li>
+                    </ul>
+                </div>
+                
+                <div class="loginBox">
+		
+                    <img src="https://i.pinimg.com/originals/60/04/30/600430c1d22c731b94cf4e7dae6b398a.gif" class="user">
+                            <h2>LOG IN</h2>
+                            <form name="myform">
+                                <p>Username</p>
+                                <input type="text" name = "q1" placeholder="Enter Username">
+                                <p>Password</p>
+                                <input type="password" name = "q2" placeholder="Enter Password">
+                                <input type="button" class="submit" value="Login" onclick="myfunc ()">
+                            
+                                
+                            </form1>
+            
+            </header>
+            
+        </body>
+        <script>
+
+                function myfunc()
+                {
+                  var a=document.myform.q1.value;
+                  var b=document.myform.q2.value;
+                
+                  if(a=="user" && b=="pass")
+                  {
+                     alert(" You got it right " );
+                     window.location.replace(" game.html ");
+                    
+                  }
+                  else
+                  {
+                    alert("You have entered an incorrect answer. Please try again." );
+                  }
+                 
+                 
+                }
+                
+                </script>
+            </html>
