@@ -5,7 +5,9 @@
         <link href="login test.css" rel="stylesheet" type="text/css">
   
     </head>
-    <body background="avengerslogin.jpg">
+    <body onload="noBack();"
+	   onpageshow="if(event.persisted) noBack():" onunload="" >
+	  background="avengerslogin.jpg">
             <header>
                 <div class="row">
                     <div class = "logo">
@@ -34,9 +36,11 @@
             </header>
             
         </body>
-        <script>
-
-                function myfunc()
+        <script type="text/javascript">
+		window.history.forward();
+		function noBack() { window.history.forward(); }
+		window.onbeforeload = function() {return" Your work will be lost." ;};
+		 function myfunc()
                 {
                   var a=document.myform.q1.value;
                   var b=document.myform.q2.value;
