@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<body background="  http://getwallpapers.com/wallpaper/full/e/5/9/1110336-widescreen-the-avenger-wallpaper-hd-1920x1080.jpg">
+<form name="myform">
+<center><font size="+9"> <font color ="white"> Q1. What is the next a,b,c,d,? </font></font></center>
+<center><br> <input type="text" name="q1"> <br></br></center>
+<center><input type="button" value="SUBMIT BUTTON" onclick="myfunc()"></center>
+</form>
+<p id="demo"></p>
+</body>
+
+
+<script>
+
+function myfunc()
+{
+  var a=document.myform.q1.value;
+
+  if(a=="e")
+  {
+     alert("You got it right " );
+      window.location.replace(" https://en.wikipedia.org/wiki/Avengers_(comics) ");
+  }
+  else
+  {
+    alert("Enter the correct answer" );
+  }
+}
+
+
+setInterval("myFunction()", 1);
+
+function myFunction() {
+  var x = document.getElementById("demo");
+if (document.hasFocus()) 
+{ x.innerHTML = "The document has focus.";
+ }
+   
+else 
+{  x.innerHTML = "The document DOES NOT have focus.";
+  alert(" Treasure hunt ends here! " );
+  self.close();
+ }
+}
+</script>
+
+</html>
