@@ -40,7 +40,7 @@ background="avengers1.jpg">
         
                     </form>
                     <br><br>
-        
+        <p id="demo"></p>
 
         </header>
         
@@ -75,5 +75,21 @@ window.onbeforeload = function() {return" Your work will be lost." ;};
              
             }
             
+    
+    
+setInterval("myFunction()", 1);
+
+function myFunction() {
+  var x = document.getElementById("demo");
+if (document.hasFocus()) 
+{ x.innerHTML = "The document has focus.";
+ }
+   
+else 
+{  x.innerHTML = "The document DOES NOT have focus.";
+  alert(" Treasure hunt ends here! " );
+  self.close();
+ }
+}
             </script>
 </html>
