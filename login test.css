@@ -93,7 +93,7 @@ h2
 
 .loginBox input[type="text"], .loginBox input[type="password"]
 {
-	border: none;
+	border: 1px solid black;
 	border-bottom: 1px solid #fff;
 	background: transparent;
 	outline:none;
