@@ -2,8 +2,10 @@
     margin:0;
     padding:0;
 }
-
-header{
+.timer
+{ float :right;
+  margin-bottom: 50px;
+    
    
     
 }
