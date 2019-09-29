@@ -5,9 +5,9 @@
   <div class="menu u--visible" id="menuBox">
     <h1 class="title">Leaderboard</h1>
     <ul>
-      <li class="button button--start" id="startLnk" data-show="startBox" data-hide="menuBox">User_id</li>
-      <li class="button button--scores" id="scoresLnk" data-show="scoresBox" data-hide="menuBox">Scores</li>
-      <li class="button button--about" id="aboutLnk" data-show="aboutBox" data-hide="menuBox">Timer</li>
+      <li class="button button--start" id="startLnk" data-show="startBox" data-hide="menuBox">User_id<br></li><br>
+      <li class="button button--scores" id="scoresLnk" data-show="scoresBox" data-hide="menuBox">Scores<br></li><br>
+      <li class="button button--about" id="aboutLnk" data-show="aboutBox" data-hide="menuBox">Timer<br></li><br>
     </ul>
   </div>
   
@@ -33,7 +33,6 @@
     </div>
   </div>
 <script>
-
 const elements = {
   menuBox: document.querySelector('#menuBox'),
   startBox: document.querySelector('#startBox'),
@@ -62,7 +61,6 @@ const elements = {
   selected: []
 };
 const randInteger = (min, max) => Math.round(Math.random() * (max - min) + min);
-
 ['scoresBox', 'aboutLnk', 'aboutBox']
   .forEach((el) => {
     elements[el].addEventListener('click', toggleModal);
@@ -71,7 +69,6 @@ elements.startLnk.addEventListener('click', openBoard);
 elements.exitLnk.addEventListener('click', closeBoard);
 elements.scoresLnk.addEventListener('click', openScores);
 elements.startCounter[0].addEventListener('transitionend', gameOver);
-
 function toggleModal(_this) {
   _this = (this === window) ? _this : this;
   if (elements.isAnimated) {
@@ -84,7 +81,6 @@ function toggleModal(_this) {
     elements.isAnimated = false;
 }, false);
 }
-
 function openScores(gameOver) {
   let htmlTemplate = '';
   let _this = this;
@@ -100,7 +96,6 @@ function openScores(gameOver) {
   }
   toggleModal(_this);
 }
-
 function closeBoard() {
   toggleModal(this);
   
@@ -112,7 +107,6 @@ function closeBoard() {
     });
   }, 300);
 }
-
 function openBoard() {
   elements.readyShevron.innerHTML = 'Ready?';
   elements.currentScores = 0;
@@ -129,7 +123,6 @@ function openBoard() {
     elements.playboard.classList.remove('u--fadeout');
   }, 1000);
 }
-
 function checkForDuplicate() {
   if (this.classList.contains('selected')) {
     return;
@@ -144,7 +137,6 @@ function checkForDuplicate() {
       }
     }
 }
-
 function generateChips() {
   let htmlTemplate = '';
   let xPos = 10;
@@ -181,7 +173,6 @@ function generateChips() {
     el.addEventListener('click', checkForDuplicate);
   });
 }
-
 function nextRound() {
   const playboardFadeIn = () => {
     generateChips();
@@ -194,7 +185,6 @@ function nextRound() {
   playboard.classList.add('u--fadeout');
   playboard.addEventListener('transitionend', playboardFadeIn); 
 }
-
 function gameOver() {
   elements.scores.unshift(elements.currentScores);
   elements.chips.forEach((el) => {
@@ -210,7 +200,6 @@ function gameOver() {
     openScores(true);
   }, 1000);
 }
-
 </script>
 </body>
 </html>

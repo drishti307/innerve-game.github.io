@@ -1,4 +1,3 @@
-
 $red-500: #F44336;
 $red-900: #B71C1C;
 $red-a700: #D50000;
@@ -25,7 +24,7 @@ $roundDuration: 60s;
   text-align: center;
   text-shadow: #33f 0 0 20px;
   
-  &--start {
+  & --start {
     position: relative;
     width: 500px;
   }
@@ -38,8 +37,8 @@ $roundDuration: 60s;
   text-align: center;
   position: absolute;
   left: calc(50% - 125px);
-  border: 1px solid $red-900;
-  background-color: $red-500;
+  border: 1px solid $red;
+  background-color: $red;
   font-size: 24px;
   text-shadow: #333 2px 2px 2px;
   cursor: pointer;

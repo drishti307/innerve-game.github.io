@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> code quest </title>
+        <link href="stylegame2.css" rel="stylesheet" type="text/css">
+  
+    </head>
+    <body onload="noBack();"
+
+onpageshow="if(event.persisted) noBack():" onunload="" ;>
+            <header>
+                <div class="row">
+                    <div class = "logo">
+                        <img src="logogame final.png">
+                    </div>
+                    <ul class="main-nav">
+                      <li class="active"><a href="game2.html"> HOME </a></li>
+                      <li><a href= "game1.html" > INSTRUCTIONS </a></li>
+                      <li><a href= "end.html" > END </a></li>
+                    </ul>
+                </div>
+            
+                <br>
+                
+                    <h2>Welcome to</h2><br>
+                    <h1> Code Quest</h1>
+
+                    <div class="button">
+                        <a href="#rlist" class="btn btn1">START </a>
+                    </div>
+    
+            <div class="Rules">
+                <h1 id="rlist"><u>Rules</u></h1>
+                
+                    <ul class="list">
+                        <b>
+                    <li> Participants will register in teams of 3-5 people. Each team will be allotted a PC.
+    
+                    </li>
+                    <li> For the duration of the game, each team will be allowed to carry 1 mobile phone with an app that will be provided to them.
+                    </li>
+                    <li>The game consists of 5 levels.
+                    </li>
+                    <li>Each level will be divided into 3 parts.
+                    </li>
+                    <ul><li>    A coding puzzle will be given to the participants, on solving which they will get the clue to a location within the university campus.
+                    The participants will go to the given location and find a hidden QR code.</li>
+                    <li>On scanning the QR code, a theme based question will be revealed. The answer to this riddle will be the password to unlock the next level.
+                    </li>
+                    <li>This password will have to be entered on the QR app as well as the respective PC.
+                    </li></ul>
+                    <li>The team to decode all the levels first wins!
+                    </li>
+                    <li>Out of the 3-5 members, 1-2 people should always be seated at the PC, solving the coding puzzles. Rest of the team members will go to respective locations to find the hidden QR codes.
+                    </li>
+                    <li>Team members can interchange their position after each level.
+                    </li>
+                    <li>All answers are single word answers, and must be entered in small-caps.</li>
+                    <li>The Puzzles include various logical, coding questions, error detection, and Theme based puzzles.
+                    </li>
+                    <li> In case of a tie, a tie-breaker will take place to determine the winner.
+                 </li>
+                </ul>
+            </p>
+            <div class="button2">
+                    <a href="ques1.html" class="nbtn">START </a>
+                </div><br><br>
+        </div>
+            </header>
+
+   <script type="text/javascript">
+
+    window.history.forward();
+                
+    function noBack() { window.history.forward(); }
+                
+    window.onbeforeload = function() {return" Your work will be lost." ;};
+                
+  </script>
+                
+</body>
+                
+</html>
