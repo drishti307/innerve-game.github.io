@@ -1,0 +1,55 @@
+<html>
+	<meta charsset="utf-8">
+	<link href="b2.css" rel="stylesheet" type="text/css" >
+	<body class="c-body">
+	  <div class="menu u--visible" id="menuBox">
+	    <h1 class="title">Leaderboard</h1>
+	    <ul>
+	      <li class="button button--userid" id="useridLnk" data-show="useridBox" data-hide="menuBox">User_id</li><br><br>
+	      <li class="button button--scores" id="scoresLnk" data-show="scoresBox" data-hide="menuBox">Scores</li><br><br>
+	      <li class="button button--timer" id="timerLnk" data-show="timerBox" data-hide="menuBox">Timer</li><br><br>
+	    </ul>
+	  </div>
+	  
+	  <div class="userid u--visible u--blur-fadeout" id="useridBox">
+	    
+	    <div class="userid__board">
+	      <div class="userid__counter u--nocontent"></div>
+	      <div id="playboard" class="userid__playboard u--nocontent u--fadeout"></div>
+	      <div class="userid__counter u--nocontent"></div>
+	       </div>
+	  </div>
+	  
+	  <div class="scores u--visible u--blur-fadeout" id="scoresBox" data-show="menuBox" data-hide="scoresBox">
+	    <h1 class="title">Your scores</h1>
+	    <div class="button button--teal button--scores">
+	      <ol id="scoresList"></ol>
+	      <p>(click here to close)</p>
+	    </div>
+	  </div>
+	  
+	
+	    
+	    </div>
+	  </div>
+	<script>
+	
+	const elements = {
+	  menuBox: document.querySelector('#menuBox'),
+	  useridBox: document.querySelector('#useridBox'),
+	  useridLnk: document.querySelector('#useridLnk'),
+	  exitLnk: document.querySelector('#exitLnk'),
+	  scoresBox: document.querySelector('#scoresBox'),
+	  scoresLnk: document.querySelector('#scoresLnk'),
+	  timerBox: document.querySelector('#timerBox'),
+	  timerLnk: document.querySelector('#timerLnk'),
+	  scoresList: document.querySelector('#scoresList'),
+	  readyShevron: document.querySelector('#readyShevron'),
+	  playboard: document.querySelector('#playboard'),
+	  useridCounter: document.querySelectorAll('.userid__counter'),
+	 
+	};
+<script>
+	</body>
+	</html>
+

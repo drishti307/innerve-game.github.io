@@ -1,0 +1,267 @@
+
+$red-500: #F44336;
+$red-900: #B71C1C;
+$red-a700: #D50000;
+$teal-500: #009688;
+$teal-900: #004D40;
+$yellow-200: #FFFF00;
+$blue-500: #2196F3;
+$roundDuration: 60s;
+
+.c-body {
+  background:
+    linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+    linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+    linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+    linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+    linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+    linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+  background-color: #F44336;
+  background-size: 20px 20px;
+  margin-top:50px;
+}
+
+.title {
+  margin: 40px auto;
+  text-align: right;
+  text-shadow: #33f 0 0 20px;
+  
+  &--start {
+    position: relative;
+    width: 500px;
+  }
+}
+.button {
+  margin-right:none;
+  color: #FFFFFF;
+  background: #912C22;
+  text-shadow: 0 0 10px #FFFFFF;
+  color: #FFFFFF;
+  background: #912C22;
+
+  -webkit-box-shadow: inset -1px 3px 8px 5px #1F87FF, 2px 5px 16px 0px #0B325E, 5px 5px 15px 5px rgba(0,0,0,0); 
+box-shadow: inset -1px 3px 8px 5px #1F87FF, 2px 5px 16px 0px #0B325E, 5px 5px 15px 5px rgba(0,0,0,0);
+  
+  &:hover {
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, .5), 0 0 20px rgba(255, 255, 255, 1);
+    outline-color: rgba(255, 255, 255, 0);
+    outline-offset: 25px;
+    text-shadow: #427388 1px 1px 2px;
+    transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+  }
+  
+  &--teal {
+  text-shadow: #333 1px 1px 3px;
+  border: 1px solid $teal-900;
+  background-color: $teal-500;
+}
+}
+
+.menu {
+  & .button--start {
+    top: 150px;
+  }
+  & .button--scores {
+    top: 250px;
+  }
+  & .button--about {
+    top: 350px;
+  }
+}
+
+.close{
+  position: right;
+  top: -8px;
+  right: 30px;
+  color: $yellow-200;
+  cursor: pointer;
+  font-size: 30px;
+  transform: rotate(45deg);
+  transition: all .75s linear;
+  
+  &:hover {
+    transform: rotate(-135deg);
+    transition: all .3s linear;
+  }
+}
+
+.start {
+  &__board {
+    width: 500px;
+    height: 500px;
+    position: right;
+    left: calc(50% - 250px);
+    display: flex;
+    border: 1px solid #48e68b;
+    background-color:black;
+    background-image:
+    radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px),
+    radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px),
+    radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px),
+    radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px);
+    background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px; 
+    background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
+    outline: 2px solid;
+    outline-color: rgba(255, 255, 255, .6);
+  }
+
+  &__playboard {
+    position: right;
+    width: 490px;
+    height: 100%;
+    transition: all 1s linear;
+  }
+
+  &__counter {
+    width: 5px;
+    height: 100%;
+    background: $red-a700;
+
+    &--collapse {
+      width: 5px;
+      height: 0;
+      background: $red-a700;
+      transition: height $roundDuration linear;
+    }
+  }
+}
+
+.scores {
+  & .button--scores {
+    height: 370px;
+  }
+  &__item {
+    text-align: left;
+    padding-left: 15px;
+  }
+}
+
+
+.chip {
+  position: right;
+  width: 50px;
+  height: 50px;
+  box-shadow:
+    0 0 0 2px rgba(255, 255, 255, .8) inset,
+    0 0 0 1px rgba(255, 200, 255, 1),
+    0 0 20px rgba(255, 255, 255, 1);
+  cursor: pointer;
+  
+  &.u--selected {
+    box-shadow:
+    0 0 0 2px rgba(0, 0, 255, .8) inset,
+    0 0 0 1px rgba(0, 0, 255, 1),
+    0 0 20px rgba(0, 0, 255, 1);
+  }
+  &:hover,
+  &.selected {
+    box-shadow:
+    0 0 0 2px rgba(255, 255, 0, .8) inset,
+    0 0 0 1px rgba(255, 200, 0, 1),
+    0 0 20px rgba(255, 255, 0, 1);
+    transition: all .5s linear;
+  }
+  &--square {
+    
+  }
+  &--round {
+    border-radius: 50px;
+  }
+  &--dots {
+    background-color: rgba(255, 255, 255, .3);
+    background-image:
+      radial-gradient($blue-500 15%, transparent 15%),
+      radial-gradient($blue-500 15%, transparent 15%);
+    background-size: 20px 20px;
+    background-position: 0 0, 10px 10px;
+  }
+  &--checkboard {
+    background-color: rgba(255, 255, 255, .2);
+  background-image: linear-gradient(45deg, $teal-500 25%, transparent 25%, transparent 75%, $teal-500 75%, $teal-500), 
+  linear-gradient(45deg, $teal-500 25%, transparent 25%, transparent 75%, $teal-500 75%, $teal-500);
+  background-size: 26px 26px;
+  background-position: 0 0, 13px 13px;
+  }
+  &--shippo {
+    background-color: rgba(255, 255, 255, .3);
+    background-size: 26px 26px;
+    background-position: 0 0, 13px 13px;
+    background-image: radial-gradient(closest-side, transparent 98%, #ff5722 99%),
+      radial-gradient(closest-side, transparent 98%, #ff5722 99%);
+  }
+  &--stripes {
+    background-color: $red-500;
+    background-image: linear-gradient(90deg, transparent 50%, rgba(255, 255, 255, .8) 50%);
+    background-size: 10px 10px;
+  }
+  &--tablecloth {
+    background-color: $yellow-200;
+    background-image: linear-gradient(90deg, rgba(200,0,0,.5) 50%, transparent 50%),
+    linear-gradient(rgba(200,0,0,.5) 50%, transparent 50%);
+    background-size:15px 15px;
+  }
+  &--clockwise {
+    animation: rotate 20s infinite linear;
+  }
+  &--c-clockwise {
+    animation: rotate 20s infinite linear reverse;
+  }
+  &--tick {
+    animation: rotate 60s steps(60, end) infinite;
+  }
+  &--c-tick {
+    animation: rotate 60s steps(60, end) infinite reverse;
+  }
+  &--phase {
+    animation: phase 5s cubic-bezier(0.68, -0.55, 0.27, 1.55) infinite;
+  }
+  &--c-phase {
+    animation: phase 5s cubic-bezier(0.68, -0.55, 0.27, 1.55) infinite reverse;
+  }
+}
+
+@keyframes rotate {
+  to { transform: rotate(360deg);}
+}
+@keyframes phase {
+  0%{ transform: rotate(-0deg);}
+  25%{ transform: rotate(-90deg);}
+  50%{ transform: rotate(-180deg);}
+  75%{ transform: rotate(-270deg);}
+  100%{ transform: rotate(-360deg);}
+}
+
+.u--visible {
+  margin: 0 auto;
+  width: 100%;
+  opacity: 1;
+  visibility: visible;
+  filter: blur(0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all .5s linear;
+  color: #fff;
+}
+.u--blur-fadeout {
+  filter: blur(30px);
+  opacity: 0;
+  visibility: hidden;
+  transition: all .5s linear;
+}
+.u--fadeout {
+  opacity: 0.5;
+  visibility: hidden;
+  transition: all .33s linear;
+}
+.u--unscale {
+  transform: scale(0);
+  transition: all .33s cubic-bezier(0.75,-0.55, 0.81, 0.51);
+}
+.u--nocontent {
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+}
