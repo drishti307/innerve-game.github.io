@@ -26,7 +26,7 @@ background= "coding5.gif">
                     <h1> <u> <br> Question 1 </u></h1>
                 </div>
 </div>
-
+<div transbox>
 
                 <p> <br>
                     There are a number of plants in Asgard. Each of these plants has been treated with some amount of pesticide. After each day, if any plant has more pesticide than the plant on its left, being weaker than the left one, it dies.
@@ -40,7 +40,7 @@ background= "coding5.gif">
                     <br>Input Format
                     <br>The first line contains an integer , the size of the array .
                     <br>The next line contains  space-separated integers .
-        
+                   
         
                  <form name= "myform" action=" " method="post">
                     <div>
@@ -54,7 +54,7 @@ background= "coding5.gif">
                        
                        </div>
         
-                    </form> </p>
+                    </form> </p></div>
     </header>    
 
     </body>
@@ -87,6 +87,13 @@ window.onbeforeload = function() {return" Your work will be lost." ;};
          
          
         }
+
+
+        var select = document.getElementById("DropList");
+                    var length = select.options.length;
+                    for (i = 0; i < length; i++) {
+                      select.options[i] = null;
+                    }
    
         </script>
 </html>
