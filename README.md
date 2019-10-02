@@ -1,3 +1,2 @@
 # innerve-game-
-find all the files used. do not open unnamed or weirdly named files, it may affect our codes. Work with .html,.css,.txt files only
-USE EDIT BRANCH and NOT Master.
+find all the files used for the game Code Quest.
