@@ -15,12 +15,13 @@ function noBack() { window.history.forward(); }
 
 
 
-
+var i=0;
         function myfunc()
         {
           var a=document.myform.Solution.value;
-        
-          if(a=="e")
+        if(i<3)
+        {
+            if(a=="e")
           {
              alert(" You got it right " );
              window.location.replace(" pass4.html ");
@@ -30,8 +31,14 @@ function noBack() { window.history.forward(); }
           {
             alert("You have entered an incorrect answer. Please try again." );
           }
-         
-         
+        }
+            
+            
+        
+else
+{
+   alert("All attempts are used !" );
+} 
         }
         
   
