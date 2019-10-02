@@ -54,12 +54,13 @@ window.history.forward();
 function noBack() { window.history.forward(); }
 
 window.onbeforeload = function() {return" Your work will be lost." ;};
-
+var i=0;
 
             function myfunc()
             {
               var a=document.myform.Solution.value;
-            
+            if(i<3)
+            {
               if(a=="asgard")
               {
                  alert(" You got it right " );
@@ -70,7 +71,12 @@ window.onbeforeload = function() {return" Your work will be lost." ;};
               {
                 alert("You have entered an incorrect answer. Please try again." );
               }
-             
+            }
+                
+else
+{
+   alert("All attempts are used !" );
+}
              
             }
         
