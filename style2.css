@@ -133,7 +133,7 @@ form input[type=text]
    box-sizing: border-box;
    border: 1px solid white;
    border-radius: 4px;
-   background-color: rgba(255,255, 255, 0.8);
+   background-color: rgba(255,255, 255);
    
 }
 
