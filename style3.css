@@ -7,7 +7,7 @@
     float: right;
     list-style: none;
     margin-top: 25px;
-    margin-right: 18px;
+    margin-right: 20px;
 }
 .main-nav li{
     display: inline-block;
@@ -17,20 +17,20 @@
 {
     color: white;
     text-decoration :none;
-    padding: 5px 20px;
+    padding: 8px 25px;
     font-family: "roboto", sans-serif;
     font-size: 17px;
 }
 
 .main-nav li.active a
 {
-    border: 2px solid white;
+    border: 1px solid white;
 
 }
 
 .main-nav li a:hover
 {
-    border: 2px solid white;
+    border: 1px solid white;
     background-color: orange;
 }
 
@@ -41,6 +41,14 @@
     margin-top: -40px;
     margin-left: -20px;
 }
+
+#inl
+{
+    width: 110px;
+    margin-top: -12px;
+    margin-left: 3px;
+}
+
 .transbox{
 
     margin-left: 150px;
@@ -114,20 +122,20 @@ form{
 form input[type=text]
 {
 
-   width: 20%;
-   padding: 6px 16px;
+   width: 25%;
+   padding: 3px 10px;
    margin: 8px;
    box-sizing: border-box;
    border: 1px solid white;
    border-radius: 4px;
-   background-color: transparent;
-   background: rgba(255, 255, 255, 0.8);
+   font-size: 20px;
+   background-color: rgba(255, 255, 255, 0.8);
 }
 
 form input[type=text]:focus
 {
     background-color: beige;
-    background: rgba(255, 255, 255, 0.6);
+    background: rgba(255, 255, 255, 0.7);
 }
 
 .submit
@@ -138,7 +146,7 @@ form input[type=text]:focus
     border: 1px solid white;
     background-color: transparent;
     color: white;
-    padding: 10px 28px;
+    padding: 12px 30px;
     text-decoration: none;
     margin-left: 60px;
     font-family: "roboto", sans-serif;

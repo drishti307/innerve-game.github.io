@@ -19,7 +19,7 @@
 {
     color: white;
     text-decoration :none;
-    padding: 5px 20px;
+    padding: 8px 25px;
     font-family: "roboto", sans-serif;
     font-size: 17px;
 }
@@ -43,6 +43,14 @@
     margin-top: -38px;
     margin-left: -40px;
 }
+
+#inl
+{
+    width: 110px;
+    margin-top: -12px;
+    margin-left: 3px;
+}
+
 .transbox{
 
     margin: 30px;

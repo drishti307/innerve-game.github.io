@@ -1,6 +1,8 @@
-html{
+html
+{
     scroll-behavior: smooth;
 }
+
 {
     margin:0;
     padding:0;
@@ -18,9 +20,9 @@ header{
     margin-top: 30px;
     margin-right: 18px;
 }
-.main-nav li{
-    display: inline-block;
-    
+.main-nav li
+{
+    display: inline-block;    
 }
 
 .main-nav li a
@@ -45,12 +47,20 @@ header{
     border: 2px solid white;
 }
 
-.logo img{
+.logo img
+{
     width: 220px;
     height : auto;
     float: left;
-    margin-top: -30px;
-    margin-left: -35px;
+    margin-top: -25px;
+    margin-left: -20px;
+}
+
+#inl
+{
+    width: 110px;
+    margin-top: 8px;
+    margin-left: 3px;
 }
 
 
@@ -71,7 +81,7 @@ text-align: right;
 font-size: 50px;
 text-transform: uppercase;
 margin-top: 160px; 
-margin-right: 170px;
+margin-right: 155px;
 }
 
 h1
@@ -81,7 +91,7 @@ text-align: right;
 font-size: 70px;
  text-transform: uppercase;
  margin-top: 0px; 
-margin-right: 120px;
+margin-right: 95px;
 }
 
 .button
@@ -149,7 +159,7 @@ margin-right: 60px;
 
 .button2
 {  
-  margin-left: 630px;  
+  margin-left: 500px;  
   
 }
 
