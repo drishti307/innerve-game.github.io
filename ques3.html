@@ -17,35 +17,40 @@ window.onbeforeload = function() {return" Your work will be lost." ;};
 
 var i=0;
         function myfunc()
-        {
-          var a=document.myform.Solution.value;
-        if(i<3)
-        {
-          if(a=="e")
-          {
-             alert(" You got it right " );
-             window.location.replace(" pass3.html ");
-            
-          }
-          else
-          {
-            if(i==1)
-                         {
-                             alert("Two more Chances!" );
-                          }
-                         else if(i==2)
-                          {
-                              alert("One more chance!" );
-                           }
-                          i++;
-          }
-        }
-            
+        {  var a=document.myform.q1.value;
+  
+ if(i<=3)
+{
+
+  if(a=="e")
+  {
+     alert("You got it right " );
+     window.location.replace(" https://en.wikipedia.org/wiki/Avengers_(comics) ");
+  }
+  else
+  {
+    i++;
+
+    if(i==1)
+   {
+
+    alert("Two more Chances!" );
+   }
+  else if(i==2)
+  {
+
+    alert("One more chance!" );
+    }
+
+}
+}
+
 else
 {
    alert("All attempts are used !" );
-  window.location.replace(" attempts.html ");  
+ window.location.replace(" attempts.html ");
 }
+ 
          
         }
    
