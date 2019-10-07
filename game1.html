@@ -4,7 +4,7 @@
         <link href="style1.css" rel="stylesheet" type="text/css">
         <meta name="viewport" content="width=device-width, initial scale=1.0">
     </head>
-    <body >
+    <body   onload="noBack();" onpageshow="if(event.persisted) noBack():" onunload="" ;>
         <header>
             <div class="row">
                     <div class = "logo">
@@ -13,8 +13,8 @@
                      
                         <ul class="main-nav">
                             <li><a href="game.html"> HOME </a></li>
-                            <li class="active"><a href="page 2.html" > INSTRUCTIONS </a></li>
-                            <li><a href="end.html" > END </a></li>
+                            
+                            
                         </ul>
             </div>
 
@@ -70,7 +70,7 @@
 
 window.history.forward();
 
-
+function noBack() { window.history.forward(); }
 
 window.onbeforeload = function() {return" Your work will be lost.";};  
         </script>

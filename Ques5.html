@@ -1,47 +1,53 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
     <head>
-        <title> Ques4 </title>
+        <title> Ques 5 </title>
         <link href="style2.css" rel="stylesheet" type="text/css">
     </head>
-   
-
-
-<script type="text/javascript">
-window.history.forward();
-function noBack() { window.history.forward(); }
-var i=0;
-        function myfunc()
-        {
-          var a=document.myform.Solution.value;
-        if(i<3)
-        {
-            if(a=="e")
-          {
-             alert(" You got it right " );
-             window.location.replace(" newend.html ");
-            
-          }
-          else
-          {
-            alert("You have entered an incorrect answer. Please try again." );
-              i++;
-          }
-        }
-            
-            
-        
-else
-{
-   alert("All attempts are used !" );
-    window.location.replace(" attempts.html ");
-} 
-        }
-        
-  
     
-        </script>
-    <body onload="noBack();" onpageshow="if(event.persisted) noBack():" onunload="" ;
+
+
+    <script type="text/javascript">
+
+        window.history.forward();
+        
+        function noBack() { window.history.forward(); }
+        
+        
+        
+        var i=0;
+                function myfunc()
+                {
+                  var a=document.myform.Solution.value;
+                if(i<3)
+                {
+                    if(a=="e")
+                  {
+                     alert(" You got it right " );
+                     window.location.replace(" newend.html ");
+                    
+                  }
+                  else
+                  {
+                    alert("You have entered an incorrect answer. Please try again." );
+                      i++;
+                  }
+                }
+                    
+                    
+                
+        else
+        {
+           alert("All attempts are used !" );
+            window.location.replace(" attempts.html ");
+        } 
+                }
+                
+          
+            
+                </script>
+
+        <body onload="noBack();" onpageshow="if(event.persisted) noBack():" onunload="" ;
 background="codinggif.gif">
         <header>
             <div class="row">
@@ -50,47 +56,52 @@ background="codinggif.gif">
                                 <img id="inl" src="white.png">
                      </div>
                         <ul class="main-nav">
-                            <li class="active"><a href=" "> QUES 4 </a></li>
+                            <li class="active"><a href=" "> QUES 5 </a></li>
                          
-                            <li><a href="game1.html" > INSTRUCTIONS </a></li>
                             
                         </ul>
             </div>
+            
 
                 <div class="headline">
-                    <h1> <u><br> Question 4 </u></h1>
+                    <h1> <u><br> Question 5 </u></h1>
                 </div>
+             
+
+            <p> Iron man is man of equality. He needs your help to divide his "powers" evenly amongst all his followers. 
+                By doing this, Iron man can create equality amongst his followers and he'll be called a true "power".
+                Iron man has N powers, and K followers. Each power is given a numerical value which shows its intensity.
+                Your task is to determine whether it is possible to allocate all the powers to followers in such a way 
+                that the sum of intensities of the powers allocated to each follower is equal. Note : A power can be allocated to only one of the followers.
+                <br>Input<br>
+                The first line of the input contains an integer T, denoting the number of test cases. Then T test cases follow.
+                 The first line of each case contains two integers N and K, with N denoting the number of powers and K denoting the number of
+                followers. In the next line are N space separated integers denoting the intensities of each power.
+                <br>Output<br>
+                For each test case, output "yes" if it is possible to divide his powers equally amongst his followers; otherwise output "no" (without quotes).
+                <br><br>Constraints<br>
+                <br>	1 <= T <= 10
+                <br> 1 <= N <= 21
+                <br>1 <= K <= 8
+                <br> Subtask #1 (20 points) : 0 <= intensity of power <= 10^5
+                <br>Subtask #2 (80 points) : 0 <= intensity of power <= 10^10
                 
-
-            <p> Captain Marvel decided to create a new town in the outskirts of the city for skrulls! 
-All the houses in the town are arranged in a rectangle of dimensions n * m, i.e. there are n rows of houses with each row containing mhouses.The first contractor  had to paint all the houses in either red, blue or green color, but they left some of the houses unpainted. 
-When Captain Marvel saw the shoddy work done by the contractor..Next  company works in a rather weird way; It paints each unpainted house with either red, blue or green color uniformly at random. 
-Consider any square shaped sub-grid of houses in this rectangular town. It can be uniquely represented by the top left house and the bottom right house. This sub-grid of houses will be called beautiful if all the houses in it have the same color. The overall beauty of the town will be equal to the total number of beautiful square sub-grids in the town. Captain Marvel’s task is to find expected beauty of the town after the painting work is completed.
-A sub-grid of houses can be uniquely defined by the coordinates of top left and bottom right houses, i.e. (x1, y1) and (x2, y2), respectively. The houses that lie in the sub-grid will be the ones that have their coordinates (x, y) satisfy both x1 ≤ x ≤ x2 and y1 ≤ y ≤ y2. This sub-grid will be a square sub-grid if x2 - x1 = y2 - y1. In particular 1 * 1 cell is also called a square sub-grid. Top left house of the town has coordinates (1, 1) and bottom right house has coordinates (n, m). 
-<br><br>Input
-<br>There is a single test case.
-<br>The first line of the input contains two space separated integers n, m denoting dimensions of town.
-<br>Each of the next n lines contains a string consisting of m characters, each of them can be 'R' (denoting red color), 'G' (denoting green color), 'B' (denoting blue color) or '*' (denoting unpainted house).
-<br><br>Output
-<br>Output a single real number corresponding to the expected beauty of the town after the painting of the houses. Captain Marvel’s answer will be considered correct if its absolute error is within 1e-2 of the answer.
-<br><br>Constraints
-<br>•	1 ≤ n, m ≤ 2000
-
-            
                  <form name= "myform" action=" " method="post">
                     <div>
         
                        <label for="Solution"> Solution </label>
                        <input type="text" autocomplete="off" name="Solution"> 
                     </div>
-                    <div>      
+                    <div>     
                        <input type="button" class="submit" value="Submit" onclick="myfunc ()">
                        
                        </div>
         
                     </form>
             
-           </p>
+           </p>  
+
     </header>    
+        
     </body>
 </html>

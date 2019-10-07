@@ -6,7 +6,7 @@
 header{
     background-position: center;
     background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("rules 1.jpg");
-    height: 150vh;
+    height: 180vh;
     background-size: cover;
 }
 .main-nav{
@@ -70,7 +70,7 @@ h1
  text-align: center;
  text-transform: capitalize;
  margin-top: 100px; 
- margin-left: 400px;  
+ margin-left: 200px;  
 }
 
 p
