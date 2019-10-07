@@ -1,5 +1,4 @@
 
-
 .main-nav{
     float: center;
     list-style: none;
@@ -15,7 +14,7 @@
 
 .timer{
     font-size: 2vw;
-    margin-left: 50px;
+    margin-left: 60px;
 }
 .main-nav p
 {
@@ -28,39 +27,20 @@
     margin-left: 10px;
 }
 
-.progress-bar
-{
-    width: 200px;
-    height: 20px;
-    font-size: 18px;
-    background-color: aliceblue;
-    border-radius: 13px;
-    text-align: center;
-    color: black;
-}
 
-/*.progressbar
-{
-    width: 100px;
-    height: 10px;
-    background-color: aliceblue;
-    border-radius: 13px;
-    padding: 10px 10px;
-}
-*/
 .logo img{
-    width: 20px;
+    width: 200px;
     height : auto;
     float: left;
     margin-top: -38px;
-    margin-left: 12px;
+    margin-left: 22px;
 }
 
 #inl
 {
-    width: 10px;
+    width: 110px;
     margin-top: -12px;
-    margin-left: 10px;
+    margin-left: 20px;
 }
 
 

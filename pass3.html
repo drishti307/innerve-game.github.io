@@ -6,7 +6,7 @@
     <body  onload="noBack();"
 
 onpageshow="if(event.persisted) noBack():" onunload="" ;
-background="aven10.jpg">
+background="im6.jpg">
         <header>
           
             <br>
@@ -23,7 +23,7 @@ background="aven10.jpg">
                     <div>
         
                        <label for="Solution"> Enter solution to riddle obtained at location<br> </label>
-                       <input type="text" autocomplete="off"  name="Solution"> 
+                       <input type="text" autocomplete="off"  name="q1"> 
                     </div>
                     <div>       
                        <input type="button" class="submit" value="Submit" onclick="myfunc ()">
@@ -49,29 +49,29 @@ var i=0;
 
             function myfunc()
             {
-              var a=document.myform.Solution.value;
-            if(i<3)
-            {
-              if(a=="bucky")
-              {
-                 alert(" You got it right " );
-                 window.location.replace(" ques4.html ");
-                
-              }
-              else
-              {
-                alert("You have entered an incorrect answer. Please try again." );
-                  i++;
-              }
-            }
-                
-else
+                var a=document.myform.q1.value;
+ 
+ if(i<=3)
 {
-   alert("All attempts are used !" );
-    window.location.replace(" attempts.html ");
+       if(a=="bucky")
+       { alert("You got it right " );
+         window.location.replace("ques4.html   ");
+       }
+       else
+       {i++;
+              if(i==1)
+              { alert("Two more Chances!" );
+              }
+              else if(i==2)
+              { alert("One more chance!" );
+              }
+       }
 }
-             
-             
+else
+{alert("All attempts are used !" );
+ window.location.replace(" attempts.html ");
+}
+     
             }
             
            </script>

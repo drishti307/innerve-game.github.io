@@ -4,7 +4,13 @@
 }
 
 header{
-    background-image: url("balloon.gif");
+    
+    background-position: center;
+    background-repeat:no-repeat;
+    background-color: #cccccc;
+    background-image: url("newendbg.jpg");
+    height:130vh;
+    background-size: cover;
 }
 
 .main-nav{
@@ -60,8 +66,7 @@ header{
 body{
     margin-top: 30px;
     height: 100vh;
-    background-color: #cccccc;
-    background-image: url("balloon.gif");
+    
     font-family: monospace;
 }
 .row{

@@ -18,27 +18,29 @@ window.onbeforeload = function() {return" Your work will be lost." ;};
 var i=0;
         function myfunc()
         {
-          var a=document.myform.Solution.value;
-        if(i<3)
-        {
-          if(a=="e")
-          {
-             alert(" You got it right " );
-             window.location.replace(" pass2.html ");
-            
-          }
-          else
-          {
-            alert("You have entered an incorrect answer. Please try again." );
-              i++;
-          }
-        }
-            
-else
+            var a=document.myform.q1.value;
+ 
+ if(i<=3)
 {
-   alert("All attempts are used !" );
-    window.location.replace(" attempts.html ");
+       if(a=="e")
+       { alert("You got it right " );
+         window.location.replace("pass2.html   ");
+       }
+       else
+       {i++;
+              if(i==1)
+              { alert("Two more Chances!" );
+              }
+              else if(i==2)
+              { alert("One more chance!" );
+              }
+       }
 }
+else
+{alert("All attempts are used !" );
+ window.location.replace(" attempts.html ");
+}
+   
          
         }
     
@@ -72,7 +74,7 @@ background="bgq2.gif">
                     <div>
         
                        <label for="Solution"> Enter Solution: <br></label>
-                       <input type="text" autocomplete="off" name="Solution"> 
+                       <input type="text" autocomplete="off" name="q1"> 
                     </div>
                     <div>       
                        <input type="button" class="submit" value="Submit" onclick="myfunc ()">
