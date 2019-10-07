@@ -29,8 +29,15 @@ var i=0;
           }
           else
           {
-            alert("You have entered an incorrect answer. Please try again." );
-              i++;
+             if(i==1)
+                         {
+                             alert("Two more Chances!" );
+                          }
+                         else if(i==2)
+                          {
+                              alert("One more chance!" );
+                           }
+                          i++;
           }
         }
             
