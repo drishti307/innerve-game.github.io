@@ -9,18 +9,7 @@
 background= "coding5.gif">
 
         <header>
-            <div class="row">
-                    <div class = "logo">
-                                <img src="logogame final.png">
-                                <img id="inl" src="white.png">
-                     </div>
-                        <ul class="main-nav">
-                            <li class="active"><a href=" "> QUES 1 </a></li>
-                            
-                            <li><a href="game1.html" > INSTRUCTIONS </a></li>
-                           
-                        </ul>
-            </div>
+          
             
                 </div>
                 <div class="headline">
@@ -77,40 +66,36 @@ window.onbeforeload = function() {return" Your work will be lost." ;};
 var i=0;
         function myfunc()
         {
-           var a=document.myform.q1.value;
-  
- if(i<=3)
-{
-
-  if(a=="e")
-  {
-     alert("You got it right " );
-     window.location.replace(" https://en.wikipedia.org/wiki/Avengers_(comics) ");
-  }
-  else
-  {
-    i++;
-
-    if(i==1)
-   {
-
-    alert("Two more Chances!" );
-   }
-  else if(i==2)
-  {
-
-    alert("One more chance!" );
-    }
-
-}
-}
-
+          var a=document.myform.Solution.value;
+        if(i<3)
+        {
+          if(a=="e")
+          {
+             alert(" You got it right " );
+             window.location.replace(" pass1.html ");
+            
+          }
+          else
+          {
+            alert("You have entered an incorrect answer. Please try again." );
+              i++;
+          }
+        }
+         
 else
 {
    alert("All attempts are used !" );
- window.location.replace(" attempts.html ");
-}
-      }
+    window.location.replace(" attempts.html ");
+}   
+         
+        }
+
+
+        var select = document.getElementById("DropList");
+                    var length = select.options.length;
+                    for (i = 0; i < length; i++) {
+                      select.options[i] = null;
+                    }
    
         </script>
 </html>

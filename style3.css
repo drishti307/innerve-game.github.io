@@ -1,8 +1,4 @@
-{
-    margin:0;
-    padding:0;
-}
-    
+  
 .main-nav{
     float: right;
     list-style: none;
@@ -68,7 +64,8 @@ body{
     margin-top: 10px;
     background-repeat:no-repeat;
     background-position: center;
-    height: 110vh;
+    height:150vh;
+
     background-size: cover;
     font-family: monospace;
 }

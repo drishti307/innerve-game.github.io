@@ -6,19 +6,9 @@
     <body  onload="noBack();"
 
 onpageshow="if(event.persisted) noBack():" onunload="" ;
-background="im3.jpg">
+background="aven10.jpg">
         <header>
-            <div class="row">
-                    <div class = "logo">
-                                <img src="logogame final.png">
-                                <img id="inl" src="white.png">
-                     </div>
-                        <ul class="main-nav">
-                            <li class="active"><a href=""> QUES 3 </a></li>
-                           
-                            
-                        </ul>
-            </div>
+          
             <br>
             
              <h2>Congratulations! </h2> <br>
@@ -59,40 +49,29 @@ var i=0;
 
             function myfunc()
             {
-               var a=document.myform.q1.value;
-  
- if(i<=3)
-{
-
-  if(a=="e")
-  {
-     alert("You got it right " );
-     window.location.replace(" https://en.wikipedia.org/wiki/Avengers_(comics) ");
-  }
-  else
-  {
-    i++;
-
-    if(i==1)
-   {
-
-    alert("Two more Chances!" );
-   }
-  else if(i==2)
-  {
-
-    alert("One more chance!" );
-    }
-
-}
-}
-
+              var a=document.myform.Solution.value;
+            if(i<3)
+            {
+              if(a=="bucky")
+              {
+                 alert(" You got it right " );
+                 window.location.replace(" ques4.html ");
+                
+              }
+              else
+              {
+                alert("You have entered an incorrect answer. Please try again." );
+                  i++;
+              }
+            }
+                
 else
 {
    alert("All attempts are used !" );
- window.location.replace(" attempts.html ");
+    window.location.replace(" attempts.html ");
 }
-  
+             
+             
             }
             
            </script>
