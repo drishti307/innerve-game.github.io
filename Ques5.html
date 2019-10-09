@@ -4,8 +4,31 @@
         <title> Ques 5 </title>
         <link href="style2.css" rel="stylesheet" type="text/css">
     </head>
-    
+    <script language="JavaScript">
 
+        //disable right click
+        
+        document.addEventListener('contextmenu', event => event.preventDefault());
+        
+                //disable inspect shortcuts
+                
+                document.onkeydown = function(e) {
+                if(event.keyCode == 123) {
+                return false;
+                }
+                if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)){
+                return false;
+                }
+                if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)){
+                return false;
+                }
+                if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)){
+                return false;
+                }
+                }
+                
+                    </script>
+        
 
     <script type="text/javascript">
 
@@ -67,24 +90,41 @@ background="codinggif.gif">
                     <h1> <u><br> Question 5 </u></h1>
                 </div>
              
+            <p> Avenger’s spacecraft is being attacked by Thanos droids. Again, Thanos droids intend to disable rather than destroy their targets. They achieve this by introducing bugs in the program of the underlying software.
+<br>One important module of every navigation controller is this code :
+<br>n <- number of vertices in the graph
+<br>adj[n][n] <- adjacency matrix(0/1) of a simple undirected graph
+<br>connected[n][n] <- 2D matrix of size n * n
+<br>for (i=1; i<=n; i++)
+ <br> for (j=1; j<=n; j++)
+  <br>  connected[i][j] = adj[i][j]
+<br>for (p=1; p<=n; p++)    // runs only up to n-k after reprogramming
+ <br> for (i=1; i<=n; i++)
+  <br>  for (j=1; j<=n; j++)
+     <br> connected[i][j] = (connected[i][j]) || (i!=j && connected[i][p] && connected[p][j])
+<br>return connected
+<br>Due to reprogramming by Thanos droids, now the outer loop on p runs only from 1 to n-k (both inclusive).
+<br>Your task is to find the number of simple undirected unweighted graphs for which the reprogrammed code still returns the correct answer. Two graphs are considered different if their adjacency matrices are not identical.
+<br>Input
+<br>The first line of the input contains an integer T denoting the number of test cases. The description of T test cases follows.
+<br>Each test case consists of single line containing two integers, n and k.
+<br>Output
+<br>For each test case, output a single line containing the number of graphs (modulo 10^9+7) for which the buggy code returns correct answer.
+<br>Constraints
+<br>•	1 ≤ T ≤ 17000
+<br>•	1 ≤ n ≤ 180
+<br>•	0 ≤ k ≤ n
 
-            <p> Iron man is man of equality. He needs your help to divide his "powers" evenly amongst all his followers. 
-                By doing this, Iron man can create equality amongst his followers and he'll be called a true "power".
-                Iron man has N powers, and K followers. Each power is given a numerical value which shows its intensity.
-                Your task is to determine whether it is possible to allocate all the powers to followers in such a way 
-                that the sum of intensities of the powers allocated to each follower is equal. Note : A power can be allocated to only one of the followers.
-                <br>Input<br>
-                The first line of the input contains an integer T, denoting the number of test cases. Then T test cases follow.
-                 The first line of each case contains two integers N and K, with N denoting the number of powers and K denoting the number of
-                followers. In the next line are N space separated integers denoting the intensities of each power.
-                <br>Output<br>
-                For each test case, output "yes" if it is possible to divide his powers equally amongst his followers; otherwise output "no" (without quotes).
-                <br><br>Constraints<br>
-                <br>	1 <= T <= 10
-                <br> 1 <= N <= 21
-                <br>1 <= K <= 8
-                <br> Subtask #1 (20 points) : 0 <= intensity of power <= 10^5
-                <br>Subtask #2 (80 points) : 0 <= intensity of power <= 10^10
+<br>If Input is:
+<br>3
+<br>1 1
+<br>2 2
+<br>3 1
+                <br>What is the Sum of the outputs?
+
+
+           
+
                 
                  <form name= "myform" action=" " method="post">
                     <div>

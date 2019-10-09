@@ -63,11 +63,13 @@
 }
 
 body{
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("treasure.jpg");
     margin-top: 30px;
     height: 100vh;
     background-color: #cccccc;
     background-size: cover;
     font-family: monospace;
+    
 }
 .row{
     max-width: 1200px;

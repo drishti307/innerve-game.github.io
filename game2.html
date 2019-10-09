@@ -54,9 +54,35 @@ onpageshow="if(event.persisted) noBack():" onunload="" ;>
             </p>
             <div class="button2">
                     <a href="ques1.html" class="nbtn">START </a>
-                </div><br><br>
+                </div><br><br><br><br>
         </div>
             </header>
+
+            <script language="JavaScript">
+
+                //disable right click
+                
+                document.addEventListener('contextmenu', event => event.preventDefault());
+                
+                        //disable inspect shortcuts
+                        
+                        document.onkeydown = function(e) {
+                        if(event.keyCode == 123) {
+                        return false;
+                        }
+                        if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)){
+                        return false;
+                        }
+                        if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)){
+                        return false;
+                        }
+                        if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)){
+                        return false;
+                        }
+                        }
+                        
+                            </script>
+
 
    <script type="text/javascript">
 
