@@ -1,6 +1,6 @@
 {
-    margin:10;
-    padding:10;
+    margin:0;
+    padding:0;
 }
 
 header{
@@ -8,7 +8,7 @@ header{
     background-position: center;
     background-repeat:no-repeat;
     background-color: #cccccc;
-    background-image: url("newendbg.jpg");
+    background-image: url("newend.jpg");
     height:130vh;
     background-size: cover;
 }
@@ -52,22 +52,14 @@ header{
     margin-top: -38px;
     margin-left: -40px;
 }
-.transbox{
 
-    margin: 30px;
-    margin-top: 20px;
-    height: 100vh;
-    background-size: cover;
-    opacity: 0.6;
-    background-color: black;
-    filter: alpha(opacity=60);
-}
 
 body{
-    margin-top: 30px;
+    margin-top: 10px;
     height: 100vh;
-    
+    color: white;
     font-family: monospace;
+    background: rgba(0,0,0,0.5);
 }
 .row{
     max-width: 1200px;
@@ -82,12 +74,13 @@ body{
 }
 h1
 {
- color: black;
+ color: white;
  text-align: center;
  font-size: 50px;
  text-transform: uppercase;
  margin-top: 200px; 
  margin-left: 80px;  
+ background: rgba(0,0,0,0.5);
 }
 
 .button
@@ -97,9 +90,9 @@ h1
 }
 
 .btn{
-    border: 2px solid black;
+    border: 1px solid white;
     padding: 15px 40px;
-    color: black;
+    color: white;
     text-decoration: none;
     margin-right: 5px;
     font-size: 15px;
