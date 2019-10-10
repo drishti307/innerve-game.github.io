@@ -32,7 +32,13 @@
           <p id="demo"></p>
               
         </body>
-
+<script>
+	        var select = document.getElementById("DropList");
+                    var length = select.options.length;
+                    for (i = 0; i < length; i++) {
+                      select.options[i] = null;
+                    }
+	    </script>
         <script>
             function myFunction() 
             {
