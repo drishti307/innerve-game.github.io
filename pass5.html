@@ -1,0 +1,99 @@
+<html>
+    <head>
+        <title> Ques 1</title>
+        <link href="style3.css" rel="stylesheet" type="text/css">
+    </head>
+    <body  onload="noBack();"
+
+onpageshow="if(event.persisted) noBack():" onunload="" ; background="aven15.jpg">
+        <header>
+           
+
+<br><br>
+                 <h2>Congratulations! </h2> <br>
+               <br><br> <p>
+                    Please Enter the 8-digit string obtained in the mobile app.
+            </p><br>
+            
+
+            <form name= "myform" action=" " method="post">
+            <div>
+
+               <label for="Solution"> Enter password : <br></label>
+               <input type="text" autocomplete="off" name="q1"> 
+            </div>
+            <div>       
+               <input type="button" class="submit" value="Submit" onclick="myfunc ()">
+               <br>
+               </div>
+
+            </form>
+            <br>
+           <br>
+        </header>
+    
+    </body>
+    <script language="JavaScript">
+
+        //disable right click
+        
+        document.addEventListener('contextmenu', event => event.preventDefault());
+        
+                //disable inspect shortcuts
+                
+                document.onkeydown = function(e) {
+                if(event.keyCode == 123) {
+                return false;
+                }
+                if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)){
+                return false;
+                }
+                if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)){
+                return false;
+                }
+                if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)){
+                return false;
+                }
+                }
+                
+                    </script>
+        
+    <script  type="text/javascript">
+
+window.history.forward();
+
+function noBack() { window.history.forward(); }
+
+window.onbeforeload = function() {return" Your work will be lost." ;};
+
+var i=0;
+            function myfunc()
+            {
+                var a=document.myform.q1.value;
+ 
+ if(i<=3)
+{
+    if(a=="vision" || a=="VISION" || a=="Vision")
+       { alert("You got it right " );
+         window.location.replace("ques 2.html   ");
+       }
+       else
+       {i++;
+              if(i==1)
+              { alert("Two more Chances!" );
+              }
+              else if(i==2)
+              { alert("One more chance!" );
+              }
+       }
+}
+else
+{alert("All attempts are used !" );
+ window.location.replace(" attempts.html ");
+}
+       
+            }
+        
+            
+            </script>
+</html>
