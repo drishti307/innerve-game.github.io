@@ -5,7 +5,7 @@ html
 
 
 header{
-    height: 140vh;
+    height: 160vh;
     background-image: url("Untitled-1.jpg");
     background-size: cover;
     background-color: black;
@@ -118,7 +118,7 @@ margin-right: 95px;
 .Rules{
     background-image: url("rules.jpg");
     background-size: cover;
-    height: 100%;
+   
     width: 100%;
 
 }
