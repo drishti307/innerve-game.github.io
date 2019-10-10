@@ -118,7 +118,8 @@ margin-right: 95px;
 .Rules{
     background-image: url("rules.jpg");
     background-size: cover;
-    
+    height: 180vh;
+    width: 100%;
 
 }
 #rlist{
