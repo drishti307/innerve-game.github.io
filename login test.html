@@ -32,24 +32,43 @@
           <p id="demo"></p>
               
         </body>
-<script>
-	        var select = document.getElementById("DropList");
-                    var length = select.options.length;
-                    for (i = 0; i < length; i++) {
-                      select.options[i] = null;
-                    }
-	    </script>
+        
+
         <script>
             function myFunction() 
             {
               <form action="timer.html">
               <input type="hidden" name="u" value="0" />
-              <input type="submit" value="Send data">
+              <input type="submit" value="Send data"/>
               </form>
             }
             </script>
 
            
+            <script language="JavaScript">
+
+//disable right click
+
+document.addEventListener('contextmenu', event => event.preventDefault());
+
+        //disable inspect shortcuts
+        
+        document.onkeydown = function(e) {
+        if(event.keyCode == 123) {
+        return false;
+        }
+        if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)){
+        return false;
+        }
+        if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)){
+        return false;
+        }
+        if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)){
+        return false;
+        }
+        }
+        
+            </script>
 
 
         <script type="text/javascript">
@@ -61,7 +80,7 @@
                   var a=document.myform.q1.value;
                   var b=document.myform.q2.value;
                 
-                  if(a=="user" && b=="pass" || a=="thor" && b == "12njne23jn" || a=="ironman" && b=="bjfjfh333fjn" || a=="captainamerica" && b=="jbfjbjfbj34" || a=="captainmarvel" && b=="gyuyo9ygy345"   || a=="hulk" && b=="qrfui57vhjg" || a== "blackwidow" && b=="qyuiuhc68697"   || a=="hawkeye"  && b=="gyg34gygukh8"  )
+                  if(a=="user" && b=="pass")
                   {
                      
                      window.location.replace(" game2.html ");
