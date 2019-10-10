@@ -96,12 +96,12 @@ background="codinggif.gif">
 <br>adj[n][n] <- adjacency matrix(0/1) of a simple undirected graph
 <br>connected[n][n] <- 2D matrix of size n * n
 <br>for (i=1; i<=n; i++)
- <br> for (j=1; j<=n; j++)
-  <br>  connected[i][j] = adj[i][j]
+ <br>       for (j=1; j<=n; j++)
+  <br>         connected[i][j] = adj[i][j]
 <br>for (p=1; p<=n; p++)    // runs only up to n-k after reprogramming
- <br> for (i=1; i<=n; i++)
-  <br>  for (j=1; j<=n; j++)
-     <br> connected[i][j] = (connected[i][j]) || (i!=j && connected[i][p] && connected[p][j])
+ <br>    for (i=1; i<=n; i++)
+  <br>        for (j=1; j<=n; j++)
+     <br>         connected[i][j] = (connected[i][j]) || (i!=j && connected[i][p] && connected[p][j])
 <br>return connected
 <br>Due to reprogramming by Thanos droids, now the outer loop on p runs only from 1 to n-k (both inclusive).
 <br>Your task is to find the number of simple undirected unweighted graphs for which the reprogrammed code still returns the correct answer. Two graphs are considered different if their adjacency matrices are not identical.
