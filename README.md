@@ -3,6 +3,9 @@ CodeQuest is a web based treasure hunt with HTML, CSS and Javascript. The game h
  
  # In Action:
 ![Main_page](cd2.png)
+
+These are the main webpages
+
 ![Main_page](cd1.png)
 
 # Authors:
